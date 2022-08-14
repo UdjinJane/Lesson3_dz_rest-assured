@@ -23,6 +23,7 @@ public class RunningTest extends AbstractTest {
 // Проверка авторизации, проверка возможностей библиотеки.
 
 
+
     @Test
     void getAuthorisationTest() throws InterruptedException {
         long time = System.currentTimeMillis();

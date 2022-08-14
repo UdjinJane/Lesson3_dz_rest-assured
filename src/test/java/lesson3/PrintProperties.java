@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 
+
 public abstract class PrintProperties{
     public static void main(String[] args) throws IOException {
 

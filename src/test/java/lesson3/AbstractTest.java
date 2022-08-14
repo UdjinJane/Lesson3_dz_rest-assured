@@ -24,6 +24,7 @@ public class AbstractTest {
 
 
 
+
 // Получаем переменные из файла свойств
 
     @BeforeAll
