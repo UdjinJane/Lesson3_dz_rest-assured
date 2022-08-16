@@ -7,9 +7,6 @@
     <list default="true" id="0b9eeaae-5ba6-4702-a863-19a767fffff1" name="Changes" comment="Домашнее задание 3 на вск 14-08-2022">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/my.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/AbstractTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/AbstractTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/Logging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/Logging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/PrintProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/PrintProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/RunningTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/RunningTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +40,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.RunningTest">
+  <component name="RunManager" selected="JUnit.Logging.getResponseLogTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lesson3.Main" />
       <module name="Lesson3_dz_rest-assured" />
@@ -70,6 +67,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Logging.getResponseLogTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lesson3_dz_rest-assured" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson3" />
+      <option name="MAIN_CLASS_NAME" value="lesson3.Logging" />
+      <option name="METHOD_NAME" value="getResponseLogTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RunningTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lesson3_dz_rest-assured" />
       <extension name="coverage">
@@ -85,7 +98,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunningTest.getAuthorisationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RunningTest.addMealTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lesson3_dz_rest-assured" />
       <extension name="coverage">
         <pattern>
@@ -95,23 +108,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="lesson3" />
       <option name="MAIN_CLASS_NAME" value="lesson3.RunningTest" />
-      <option name="METHOD_NAME" value="getAuthorisationTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RunningTest.getResponseData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lesson3_dz_rest-assured" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson3" />
-      <option name="MAIN_CLASS_NAME" value="lesson3.RunningTest" />
-      <option name="METHOD_NAME" value="getResponseData" />
+      <option name="METHOD_NAME" value="addMealTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -119,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Logging.getResponseLogTest" />
+        <item itemvalue="JUnit.RunningTest.addMealTest" />
         <item itemvalue="JUnit.RunningTest" />
         <item itemvalue="Application.PrintProperties" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.RunningTest.getAuthorisationTest" />
-        <item itemvalue="JUnit.RunningTest.getResponseData" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660463305596</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Домашнее задание 3 на вск 14-08-2022">
+      <created>1660463407643</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660463407643</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +177,12 @@
       <FILTER>lesson3.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/Lesson3_dz_rest_assured$RunningTest_getAuthorisationTest.ic" NAME="RunningTest.getAuthorisationTest Coverage Results" MODIFIED="1660460882769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>lesson3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lesson3_dz_rest_assured$RunningTest_addMealTest.ic" NAME="RunningTest.addMealTest Coverage Results" MODIFIED="1660620249428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>lesson3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Lesson3_dz_rest_assured$Logging_getResponseLogTest.ic" NAME="Logging.getResponseLogTest Coverage Results" MODIFIED="1660620328128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>lesson3.*</FILTER>
     </SUITE>
   </component>

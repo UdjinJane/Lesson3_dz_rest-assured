@@ -267,4 +267,48 @@ public class RunningTest extends AbstractTest {
 
     }
 
+    @Test
+    void addMealTest() {
+
+        String id = given()
+
+                .queryParam("apiKey", getApiKey())
+                .body("{\n"
+                        + " \"date\": 1644881179,\n"
+                        + " \"slot\": 1,\n"
+                        + " \"position\": 0,\n"
+                        + " \"type\": \"INGREDIENTS\",\n"
+                        + " \"value\": {\n"
+                        + " \"ingredients\": [\n"
+                        + " {\n"
+                        + " \"name\": \"1 avocado\"\n"
+                        + " }\n"
+                        + " ]\n"
+                        + " }\n"
+                        + "}")
+                .when()
+                .post("https://api.spoonacular.com/mealplanner/udjin/items")
+                .then()
+                .statusCode(200)
+                .extract()
+                .jsonPath()
+                .get("id")
+                .toString();
+
+        given()
+
+                .queryParam("apiKey", getApiKey())
+                .when()
+                .get("https://api.spoonacular.com/mealplanner/udjin/shopping-list")
+                .then()
+                .statusCode(200);
+
+        given()
+
+                .queryParam("apiKey", getApiKey())
+                .delete("https://api.spoonacular.com/mealplanner/udjin/items/" + id)
+                .then()
+                .statusCode(200);
+    }
+
 }
