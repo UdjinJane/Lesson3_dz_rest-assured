@@ -271,7 +271,7 @@ public class RunningTest extends AbstractTest {
     void addMealTest() {
 
         String id = given()
-                .queryParam("hash", "a3da66460bfb7e62ea1c96cfa0b7a634a346ccbf")
+                .queryParam("hash", "d7844e65a5b902a44549553750c394c4e3b72585")
                 .queryParam("apiKey", getApiKey())
                 .body("{\n"
                         + " \"date\": 1644881179,\n"
@@ -287,7 +287,7 @@ public class RunningTest extends AbstractTest {
                         + " }\n"
                         + "}")
                 .when()
-                .post("https://api.spoonacular.com/mealplanner/udjin/items")
+                .post("https://api.spoonacular.com/mealplanner/udjinjane/items")
                 .then()
                 .statusCode(200)
                 .extract()
@@ -296,17 +296,17 @@ public class RunningTest extends AbstractTest {
                 .toString();
 
         given()
-                .queryParam("hash", "a3da66460bfb7e62ea1c96cfa0b7a634a346ccbf")
+                .queryParam("hash", "d7844e65a5b902a44549553750c394c4e3b72585")
                 .queryParam("apiKey", getApiKey())
                 .when()
-                .get("https://api.spoonacular.com/mealplanner/udjin/shopping-list")
+                .get("https://api.spoonacular.com/mealplanner/udjinjane/shopping-list")
                 .then()
                 .statusCode(200);
 
         given()
-                .queryParam("hash", "a3da66460bfb7e62ea1c96cfa0b7a634a346ccbf")
+                .queryParam("hash", "d7844e65a5b902a44549553750c394c4e3b72585")
                 .queryParam("apiKey", getApiKey())
-                .delete("https://api.spoonacular.com/mealplanner/udjin/items/" + id)
+                .delete("https://api.spoonacular.com/mealplanner/udjinjane/items/" + id)
                 .then()
                 .statusCode(200);
     }
