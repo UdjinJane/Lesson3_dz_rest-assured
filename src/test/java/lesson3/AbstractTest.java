@@ -1,6 +1,6 @@
 package lesson3;
 
-import org.hamcrest.Matcher;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 
 import java.io.FileInputStream;
@@ -38,6 +38,10 @@ public class AbstractTest {
         sla =  Long.valueOf(prop.getProperty("sla"));
         contentType = prop.getProperty("contentType");
 
+    }
+    @AfterAll
+    static void tearDownAfterClass() throws Exception {
+        System.out.println("@AfterAll : Tests OK!");
     }
 
     public static String getApiKey() {
