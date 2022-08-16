@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0b9eeaae-5ba6-4702-a863-19a767fffff1" name="Changes" comment="Домашнее задание 3 на вск 14-08-2022">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/my.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/lesson3/RunningTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/lesson3/RunningTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660463407643</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Домашнее задание 3 на вск 14-08-2022">
+      <created>1660620670446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660620670446</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

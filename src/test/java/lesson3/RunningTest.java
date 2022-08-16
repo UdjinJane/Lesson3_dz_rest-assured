@@ -271,7 +271,7 @@ public class RunningTest extends AbstractTest {
     void addMealTest() {
 
         String id = given()
-
+                .queryParam("hash", "a3da66460bfb7e62ea1c96cfa0b7a634a346ccbf")
                 .queryParam("apiKey", getApiKey())
                 .body("{\n"
                         + " \"date\": 1644881179,\n"
@@ -296,7 +296,7 @@ public class RunningTest extends AbstractTest {
                 .toString();
 
         given()
-
+                .queryParam("hash", "a3da66460bfb7e62ea1c96cfa0b7a634a346ccbf")
                 .queryParam("apiKey", getApiKey())
                 .when()
                 .get("https://api.spoonacular.com/mealplanner/udjin/shopping-list")
@@ -304,7 +304,7 @@ public class RunningTest extends AbstractTest {
                 .statusCode(200);
 
         given()
-
+                .queryParam("hash", "a3da66460bfb7e62ea1c96cfa0b7a634a346ccbf")
                 .queryParam("apiKey", getApiKey())
                 .delete("https://api.spoonacular.com/mealplanner/udjin/items/" + id)
                 .then()
